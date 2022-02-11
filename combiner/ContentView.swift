@@ -15,6 +15,7 @@ struct ContentView: View {
                     .padding()
             }
             .frame(maxHeight: .infinity, alignment: .top)
+            .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
