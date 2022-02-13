@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var offset = CGFloat(0)
     var body: some View {
         NavigationView {
             ZStack(alignment: .top) {
@@ -15,6 +16,7 @@ struct ContentView: View {
                     .padding()
             }
             .frame(maxHeight: .infinity, alignment: .top)
+            .background(BackgroundView())
             .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
