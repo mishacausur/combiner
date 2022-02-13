@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var offset = CGFloat(0)
+    @State private var offsetContent = CGFloat(0)
     var body: some View {
         NavigationView {
             ZStack(alignment: .top) {
-                Text("Hello, Combine!")
-                    .padding()
+                TrackScrollView(offsetChanged: { offset in
+                    withAnimation(.easeIn) {
+                        offsetContent = offset.y
+                    }
+                   
+                    print("Content offset", offsetContent)
+                }) {
+                    Text("Hello, Combine!")
+                        .padding()
+                }
+                VisualBlur(blurStyle: .systemUltraThinMaterial)
+                    .opacity(offsetContent < -16 ? 1 : 0)
+                    .ignoresSafeArea()
+                    .frame(height: 0)
+                    
+                
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .background(BackgroundView())

@@ -137,19 +137,19 @@ struct BackgroundView: View {
             .blur(radius: 20)
             .frame(width: 167, height: 167, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .mask(Circle())
-            .overlay(
-                RadialGradient(
-                    gradient: Gradient(stops: [
-                                        .init(color: Color(#colorLiteral(red: 0.1843137255, green: 0.7215686275, blue: 1, alpha: 1)), location: 0),
-                                        .init(color: Color(#colorLiteral(red: 0.6196078431, green: 0.9254901961, blue: 0.8509803922, alpha: 1)), location: 1)]),
-                    center: UnitPoint(x: 0.20449714845584743, y: 0.5004239991789909),
-                    startRadius: 1.5206400165393983,
-                    endRadius: 151.28048071032234
-                )
-                .blur(radius: 30)
-                .frame(width: 104, height: 104)
-                .offset(x: 19, y: 0)
-            )
+//            .overlay(
+//                RadialGradient(
+//                    gradient: Gradient(stops: [
+//                                        .init(color: Color(#colorLiteral(red: 0.1843137255, green: 0.7215686275, blue: 1, alpha: 1)), location: 0),
+//                                        .init(color: Color(#colorLiteral(red: 0.6196078431, green: 0.9254901961, blue: 0.8509803922, alpha: 1)), location: 1)]),
+//                    center: UnitPoint(x: 0.20449714845584743, y: 0.5004239991789909),
+//                    startRadius: 1.5206400165393983,
+//                    endRadius: 151.28048071032234
+//                )
+//                .blur(radius: 30)
+//                .frame(width: 104, height: 104)
+//                .offset(x: 19, y: 0)
+//            )
             .offset(x: 160, y: -100)
             
             LinearGradient(
