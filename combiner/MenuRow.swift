@@ -13,7 +13,9 @@ struct MenuRow: View {
     var rightIcon: String = "chevron.right"
     var body: some View {
         HStack(spacing: 12) {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text(title)
+                .font(.subheadline)
+                .fontWeight(.semibold)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
