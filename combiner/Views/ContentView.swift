@@ -19,8 +19,7 @@ struct ContentView: View {
                    
                     print("Content offset", offsetContent)
                 }) {
-                    Text("Hello, Combine!")
-                        .padding()
+                    content
                 }
                 VisualBlur(blurStyle: .systemUltraThinMaterial)
                     .opacity(offsetContent < -16 ? 1 : 0)
@@ -34,6 +33,15 @@ struct ContentView: View {
             .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    var content: some View {
+        VStack {
+            MenuRow()
+            MenuRow()
+            MenuRow()
+        }
+        
     }
 }
 

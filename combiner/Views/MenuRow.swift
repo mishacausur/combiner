@@ -13,7 +13,7 @@ struct MenuRow: View {
     var rightIcon: String = "chevron.right"
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: leftIcon)
+            GradientIcon(iconName: leftIcon)
             Text(title)
                 .font(.subheadline)
                 .fontWeight(.semibold)
