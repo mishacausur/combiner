@@ -38,10 +38,15 @@ struct ContentView: View {
     var content: some View {
         VStack {
             MenuRow()
+            divider
             MenuRow()
+            divider
             MenuRow()
         }
-        
+    }
+    
+    var divider: some View {
+        Divider().background(Color.white.blendMode(.overlay))
     }
 }
 
