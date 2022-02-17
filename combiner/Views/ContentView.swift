@@ -39,9 +39,9 @@ struct ContentView: View {
         VStack {
             MenuRow()
             divider
-            MenuRow()
+            MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
             divider
-            MenuRow()
+            MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
         }
     }
     
