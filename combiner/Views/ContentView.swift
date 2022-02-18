@@ -35,15 +35,15 @@ struct ContentView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
     
-    var content: some View {
-        VStack {
-            MenuRow()
-            divider
-            MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
-            divider
-            MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
-        }
-    }
+//    var content: some View {
+//        VStack {
+//            MenuRow()
+//            divider
+//            MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
+//            divider
+//            MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+//        }
+//    }
     
     var divider: some View {
         Divider().background(Color.white.blendMode(.overlay))
