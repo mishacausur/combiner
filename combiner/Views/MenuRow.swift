@@ -23,7 +23,7 @@ struct MenuRow: View {
                 .opacity(0.3)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding()
+//        .padding()
     }
 }
 

@@ -37,12 +37,33 @@ struct ContentView: View {
     
     var content: some View {
         VStack {
-            MenuRow()
-            divider
-            MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
-            divider
-            MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+            VStack {
+                MenuRow()
+                divider
+                MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
+                divider
+                MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+            }
+            .padding(16)
+            .background(Color("Background 1"))
+            .background(VisualBlur(blurStyle: .systemUltraThinMaterialDark))
+            .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Color.white).blendMode(.overlay))
+            .mask {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+            }
+        .padding(.top, 20)
+            
+            Text("Version 1.00")
+                .foregroundColor(.white.opacity(0.6))
+                .font(.footnote)
+                .padding(.top, 20)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 10)
         }
+        .foregroundColor(.white)
+        .padding(.top, 20)
+        .padding(.horizontal, 20)
+        .padding(.bottom, 10)
     }
     
     var divider: some View {
