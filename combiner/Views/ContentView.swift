@@ -44,9 +44,16 @@ struct ContentView: View {
                     MenuRow()
                 }
                 divider
-                MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
+                NavigationLink {
+                    PackagesView()
+                } label: {
+                    MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
+                }
                 divider
-                MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+                Link(destination: URL(string: "https://www.apple.com")!) {
+                    MenuRow(title: "YouTube channel", leftIcon: "play.rectangle.fill", rightIcon: "link")
+                }
+               
             }
             .padding(16)
             .background(Color("Background 1"))
