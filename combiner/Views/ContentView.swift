@@ -38,7 +38,11 @@ struct ContentView: View {
     var content: some View {
         VStack {
             VStack {
-                MenuRow()
+                NavigationLink {
+                    FaqView()
+                } label: {
+                    MenuRow()
+                }
                 divider
                 MenuRow(title: "Swift UI Packages", leftIcon: "square.stack.3d.up.fill")
                 divider
