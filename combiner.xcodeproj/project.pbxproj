@@ -19,6 +19,7 @@
 		B633416C27C139FA0071A4F4 /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633416B27C139FA0071A4F4 /* FaqView.swift */; };
 		B633416E27C13A060071A4F4 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633416D27C13A060071A4F4 /* PackagesView.swift */; };
 		B633419627C3F3100071A4F4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633419527C3F3100071A4F4 /* Package.swift */; };
+		B633419827C3F8800071A4F4 /* PackageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633419727C3F8800071A4F4 /* PackageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B633416B27C139FA0071A4F4 /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
 		B633416D27C13A060071A4F4 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
 		B633419527C3F3100071A4F4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		B633419727C3F8800071A4F4 /* PackageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B633416627B96D780071A4F4 /* MenuRow.swift */,
+				B633419727C3F8800071A4F4 /* PackageRow.swift */,
 			);
 			path = Rows;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				B633416527B969D30071A4F4 /* VisualBlur.swift in Sources */,
 				B633416127B95F6C0071A4F4 /* BackgroundView.swift in Sources */,
 				B619454827B196F30048BFEB /* ContentView.swift in Sources */,
+				B633419827C3F8800071A4F4 /* PackageRow.swift in Sources */,
 				B633416C27C139FA0071A4F4 /* FaqView.swift in Sources */,
 				B633416E27C13A060071A4F4 /* PackagesView.swift in Sources */,
 				B633416A27BAC8D60071A4F4 /* GradientIcon.swift in Sources */,
