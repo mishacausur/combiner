@@ -23,7 +23,7 @@ struct PackagesView: View {
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .navigationTitle("SwiftUI Packages")
-        .background(Color("Background2").edgesIgnoringSafeArea(.all))
+        .background(Color("Background 2").edgesIgnoringSafeArea(.all))
     }
     
     var content: some View {
