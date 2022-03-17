@@ -94,8 +94,6 @@
 				B619454727B196F30048BFEB /* ContentView.swift */,
 				B633416027B95F6C0071A4F4 /* BackgroundView.swift */,
 				B633416427B969D30071A4F4 /* VisualBlur.swift */,
-				B633416D27C13A060071A4F4 /* PackagesView.swift */,
-				B633416B27C139FA0071A4F4 /* FaqView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +126,8 @@
 		B633417227C13A740071A4F4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B633416D27C13A060071A4F4 /* PackagesView.swift */,
+				B633416B27C139FA0071A4F4 /* FaqView.swift */,
 				B633417027C13A3C0071A4F4 /* Other */,
 				B633416F27C13A290071A4F4 /* Rows */,
 			);
