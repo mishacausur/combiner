@@ -39,6 +39,7 @@ struct ContentView: View {
     
     var content: some View {
         VStack {
+            ProfileRow()
             VStack {
                 NavigationLink {
                     FaqView()
