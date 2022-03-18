@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
 struct Networker {
     
@@ -31,3 +33,41 @@ struct Networker {
 }
 
 var faqData: [FAQ] = Networker.shared.loadData("faqData.json")
+
+extension NotificationCenter {
+    struct Publisher: Combine.Publisher {
+       
+        typealias Output = Notification
+        typealias Failure = Never
+        init(center: NotificationCenter, name: Notification.Name, object: Any? = nil) {}
+        
+        func receive<S>(subscriber: S) where S : Subscriber, Never == S.Failure, Notification == S.Input {
+            
+        }
+        
+    }
+}
+
+extension Subscribers {
+    class Assign<Root, Input>: Subscriber, Cancellable {
+        
+        typealias Failure = Never
+        init(object: Root, keyPath: ReferenceWritableKeyPath<Root, Input>) {}
+        
+        func receive(subscription: Subscription) {
+            
+        }
+        
+        func receive(_ input: Input) -> Subscribers.Demand {
+            return _ = Subscribers.Demand(from: JSONDecoder() as! Decoder)
+        }
+        
+        func receive(completion: Subscribers.Completion<Never>) {
+            
+        }
+        
+        func cancel() {
+            
+        }
+    }
+}
