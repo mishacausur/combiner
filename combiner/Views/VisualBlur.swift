@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct VisualBlur<Content: View>: View {
+    
     var blurStyle: UIBlurEffect.Style
     var vibrancyStyle: UIVibrancyEffectStyle?
     var content: Content

@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension View {
+    
     func blurBackground() -> some View {
         self
             .padding(16)
