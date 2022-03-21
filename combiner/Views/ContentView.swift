@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @Environment(\.colorScheme) private var colorScheme: ColorScheme
+    
     @State private var offsetContent = CGFloat(0)
+    
     var body: some View {
         NavigationView {
             ZStack(alignment: .top) {
